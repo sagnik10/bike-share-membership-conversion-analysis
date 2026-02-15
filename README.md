@@ -205,15 +205,19 @@ Examples:
 
 ## Visualizations
 
-This project includes professional visualizations such as:
+This project generates professional visualizations directly as high‑resolution PNG image files using Python.
 
-* Ride duration distributions
-* Weekly usage comparison charts
-* Hourly usage patterns
-* Monthly trends
-* Behavioral comparison plots
+Generated outputs include:
 
-These visualizations support business decision-making and executive reporting.
+* Ride duration distribution histogram (hist.png)
+* Hourly performance curve (hour.png)
+* Seasonal performance curve (month.png)
+* Performance heatmap (heat.png)
+* Geospatial ride cluster intelligence map (geo.png)
+
+These visualizations are generated using Matplotlib, Seaborn, and GeoPandas, and are designed for executive‑level analysis and portfolio presentation.
+
+Note: This project does not generate PDF reports. All outputs are exported as CSV and PNG files for analysis and visualization.
 
 ---
 
@@ -238,8 +242,19 @@ cyclistic-bike-share-analysis/
 ├── output/
 │   Clean datasets and exports
 │
-├── report/
-│   Final PDF reports and summaries
+├── geo/
+│   Geospatial boundary data
+│
+├── output/
+│   cleaned_data.csv
+│   hist.png
+│   hour.png
+│   month.png
+│   heat.png
+│   geo.png
+│
+├── scripts/
+│   Data processing and analysis scripts
 │
 └── README.md
 ```
@@ -299,8 +314,10 @@ This project is suitable for demonstrating skills to:
 Potential enhancements include:
 
 * Predictive modeling for membership conversion
-* Machine learning classification models
-* Interactive dashboards
+* Advanced machine learning models
+* Interactive dashboards (Tableau / Power BI)
+* Real‑time analytics pipeline
+* Automated reporting systems
 * Geographic analysis of ride patterns
 
 ---
